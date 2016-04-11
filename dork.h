@@ -35,16 +35,21 @@ using namespace std;
 using namespace std::this_thread; // sleep_for, sleep_until
 using namespace std::chrono; // nanoseconds, system_clock, seconds
 
-
-//Function prototype
-
-//Display functions
-void display_init(); //Function to initialize ncurses terminal
-void display_close(); //Function to close ncurses terminal
-void intro_display();
-void displaytext (std::ifstream&); 
-void displaytext_delay(std::ifstream& );
-void clearDisplay(int);
+class dork
+{
+  //Function prototype
+  
+  //Display functions
+  void display_init(); //Function to initialize ncurses terminal
+  void display_close(); //Function to close ncurses terminal
+  void intro_display();
+  void displaytext (std::ifstream&); 
+  void displaytext_delay(std::ifstream& );
+  void clearDisplay(int);
+  
+  private:
+    string user_name;
+};
 
 
 #endif
