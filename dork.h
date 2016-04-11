@@ -34,9 +34,6 @@
 using namespace std;
 using namespace std::this_thread; // sleep_for, sleep_until
 using namespace std::chrono; // nanoseconds, system_clock, seconds
-
-class dork
-{
   //Function prototype
   
   //Display functions
@@ -46,13 +43,5 @@ class dork
   void displaytext (std::ifstream&); 
   void displaytext_delay(std::ifstream& );
   void clearDisplay(int);
-  
-  private:
-    string user_name;
-    string level;
-    int energy_level;
-    int steps;
-};
-
 
 #endif
