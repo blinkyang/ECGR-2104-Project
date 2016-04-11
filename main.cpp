@@ -20,8 +20,8 @@ int main(int argc, char *argv[])
 {
 	display_init();
 	intro_display();
-	/*User function calls
-	 */
+	clearDisplay(1);
+	
     getch();
     display_close();
     return 0;
