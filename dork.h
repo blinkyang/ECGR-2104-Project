@@ -49,6 +49,9 @@ class dork
   
   private:
     string user_name;
+    string level;
+    int energy_level;
+    int steps;
 };
 
 
