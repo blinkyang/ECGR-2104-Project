@@ -1,3 +1,4 @@
+#include "dork.h"
 #include "Profile.h"
 #include <iostream>
 #include <string>
@@ -31,7 +32,7 @@ void Profile::display_info()
     cout << endl;
     printw("--------------------------------------------------------------------------");
     cout << endl;
-    cout << "Welcome, " << user_name << "!" << "\tLevel: " << level << "\tEnergy Level: " << energy_level << "\tSteps: " << steps
+    cout << "Welcome, " << user_name << "!" << "\tLevel: " << level << "\tEnergy Level: " << energy_level << "\tSteps: " << steps;
     cout << endl;
     printw("--------------------------------------------------------------------------");
     cout << endl;
