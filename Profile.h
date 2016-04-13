@@ -15,6 +15,7 @@ class Profile
         Profile(string, string, int, int);
         void display_info();
         void display_banner();
+        void setName();
 
     private:
         string user_name;

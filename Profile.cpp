@@ -23,14 +23,22 @@ void Profile::display_info()
 {
     printf("--------------------------------------------------------------------------\n");
     printf("Hello ");
-    cout << user_name;
+    printf("%s", user_name.c_str());
     printf("\tLevel: ");
-    cout << level;
+    printf("%s", level.c_str());
     printf("\tEnergy Level: ");
-    cout << energy_level;
+    printf("%d", energy_level);
     printf("\tSteps: ");
+    printf("%d", steps);
     cout << steps << endl;
-    printf("--------------------------------------------------------------------------\n");
+    printf("\n--------------------------------------------------------------------------\n");
+}
+
+void Profile::setName() 
+{
+
+	cout << "What's your name?" << endl;
+	cin >> user_name;
 }
 
 void Profile::display_banner()
