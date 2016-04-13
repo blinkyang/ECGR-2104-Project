@@ -1,5 +1,6 @@
 #include "Profile.h"
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -22,6 +23,6 @@ Profile::Profile(string un, string curr_level, int en_lev, int num_steps)
 void Profile::display_info()
 {
     cout << endl << "--------------------------------------------------------------------------" << endl
-         << "Hello " << user_name << "!" << "\tLevel: " << level << "\tEnergy Level: " << energy_level << "\tSteps: " << steps
+         << "Welcome, " << user_name << "!" << "\tLevel: " << level << "\tEnergy Level: " << energy_level << "\tSteps: " << steps
          << endl << "--------------------------------------------------------------------------" << endl;
 }
