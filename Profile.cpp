@@ -26,6 +26,13 @@ void Profile::display_info()
          << endl << "--------------------------------------------------------------------------" << endl;
 }
 
+void Profile::setName() 
+{
+
+	cout << "What's your name?" << endl;
+	cin >> user_name;
+}
+
 void Profile::display_banner()
 {
     ifstream infile("banner.txt");
