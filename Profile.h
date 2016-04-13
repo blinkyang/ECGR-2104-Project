@@ -2,6 +2,9 @@
 #define PROFILE_H
 
 #include <iostream>
+#include <fstream>
+#include <vector>
+#include <curses.h>
 
 using namespace std;
 
