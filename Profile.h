@@ -11,7 +11,7 @@ class Profile
         Profile();
         Profile(string, string, int, int);
         void display_info();
-        void display_banner(ifstream&);
+        void display_banner();
 
     private:
         string user_name;
