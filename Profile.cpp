@@ -25,3 +25,20 @@ void Profile::display_info()
          << "Hello " << user_name << "!" << "\tLevel: " << level << "\tEnergy Level: " << energy_level << "\tSteps: " << steps
          << endl << "--------------------------------------------------------------------------" << endl;
 }
+
+void Profile::display_banner(ifstream& infile)
+{
+    vector<string> content;
+    string line;
+
+    while(infile)
+    {
+        getline(infile, line);
+        content.push_back(line);
+    }
+
+    for(auto x:content)
+    {
+        cout << x << endl;
+    }
+}
