@@ -16,7 +16,13 @@ Profile::Profile(string un, string curr_level, int en_lev, int num_steps)
 {
     user_name = un;
     level = curr_level;
-    energy_level = en_lev;
+    
+    if (en_lev > 30) {
+        energy_level = 30;
+    }
+    else {
+        energy_level = en_lev;
+    }
     steps = num_steps;
 }
 
