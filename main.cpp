@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 {
 	Profile bob;
 	display_init();
-	intro_display();
+	//intro_display();
 	clearDisplay(1);
 	bob.display_info();
 	
