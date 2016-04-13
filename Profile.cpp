@@ -12,9 +12,9 @@ Profile::Profile()
     steps = 0;
 }
 
-Profile::Profile(string un, string curr_level, int en_lev, int num_steps)
+Profile::Profile(string un, string curr_level, signed int en_lev, int num_steps)
 {
-    user_name = un;
+    getline(un, user_name);
     level = curr_level;
     
     if (en_lev > 30) {
