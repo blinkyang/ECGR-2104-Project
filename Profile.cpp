@@ -21,9 +21,16 @@ Profile::Profile(string un, string curr_level, int en_lev, int num_steps)
 
 void Profile::display_info()
 {
-    cout << endl << "--------------------------------------------------------------------------" << endl
-         << "Hello " << user_name << "!" << "\tLevel: " << level << "\tEnergy Level: " << energy_level << "\tSteps: " << steps
-         << endl << "--------------------------------------------------------------------------" << endl;
+    printf("--------------------------------------------------------------------------\n");
+    printf("Hello ");
+    cout << user_name;
+    printf("\tLevel: ");
+    cout << level;
+    printf("\tEnergy Level: ");
+    cout << energy_level;
+    printf("\tSteps: ");
+    cout << steps << endl;
+    printf("--------------------------------------------------------------------------\n");
 }
 
 void Profile::setName() 
