@@ -23,9 +23,9 @@ void Profile::display_info()
 {
     printf("--------------------------------------------------------------------------\n");
     printf("Hello ");
-    printf("%s", user_name);
+    printf("%s", user_name.c_str());
     printf("\tLevel: ");
-    printf("%s", level);
+    printf("%s", level.c_str());
     printf("\tEnergy Level: ");
     printf("%d", energy_level);
     printf("\tSteps: ");
