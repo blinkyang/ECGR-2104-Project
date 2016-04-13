@@ -26,8 +26,9 @@ void Profile::display_info()
          << endl << "--------------------------------------------------------------------------" << endl;
 }
 
-void Profile::display_banner(ifstream& infile)
+void Profile::display_banner()
 {
+    ifstream infile("banner.txt");
     vector<string> content;
     string line;
 
