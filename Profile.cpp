@@ -14,7 +14,7 @@ Profile::Profile()
 
 Profile::Profile(string un, string curr_level, signed int en_lev, int num_steps)
 {
-    getline(un, user_name);
+    user_name = un;
     level = curr_level;
     
     if (en_lev > 30) {
