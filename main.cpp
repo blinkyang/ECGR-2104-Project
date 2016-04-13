@@ -15,12 +15,15 @@
  * /
  * *******************************************************************/
 #include"dork.h"
+#include "Profile.h"
 
 int main(int argc, char *argv[])
 {
+	Profile bob;
 	display_init();
 	intro_display();
 	clearDisplay(1);
+	bob.display_info();
 	
     getch();
     display_close();
