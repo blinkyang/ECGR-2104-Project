@@ -15,7 +15,7 @@ class Profile
     private:
         string user_name;
         string level;
-        int energy_level;
+        signed int energy_level;
         int steps;
 };
 
