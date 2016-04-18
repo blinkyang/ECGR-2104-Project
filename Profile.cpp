@@ -1,4 +1,5 @@
 #include "Profile.h"
+#inclde "dork.h"
 #include <iostream>
 
 using namespace std;
@@ -21,17 +22,19 @@ Profile::Profile(string un, string curr_level, int en_lev, int num_steps)
 
 void Profile::display_info()
 {
-    printf("--------------------------------------------------------------------------\n");
-    printf("Hello ");
-    printf("%s", user_name.c_str());
-    printf("\tLevel: ");
-    printf("%s", level.c_str());
-    printf("\tEnergy Level: ");
-    printf("%d", energy_level);
-    printf("\tSteps: ");
-    printf("%d", steps);
+    clearDisplay(1);
+    
+    printw("--------------------------------------------------------------------------\n");
+    printw("Hello ");
+    printw("%s", user_name.c_str());
+    printw("\tLevel: ");
+    printw("%s", level.c_str());
+    printw("\tEnergy Level: ");
+    printw("%d", energy_level);
+    printw("\tSteps: ");
+    printw("%d", steps);
     cout << steps << endl;
-    printf("\n--------------------------------------------------------------------------\n");
+    printw("\n--------------------------------------------------------------------------\n");
 }
 
 void Profile::setName() 
