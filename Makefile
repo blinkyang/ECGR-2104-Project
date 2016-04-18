@@ -6,7 +6,7 @@ display.o: display.cpp
 main.o: main.cpp
 	g++ -c -std=c++11 main.cpp -lncurses
 Profile.o: profile.cpp
-	g++ -c -std=c++11 profile.cpp -lncurses
+	g++ -c -std=c++11 Profile.cpp -lncurses
 run:
 	./resu
 clean:
