@@ -1,6 +1,10 @@
 #include "dork.h"
 #include "Profile.h"
+#include <assert.h>
+#include <fstream>
 #include <iostream>
+#include <boost/archive/text_iarchive.hpp>
+#include <boost/archive/text_oarchive.hpp>
 #include <string>
 
 using namespace std;
