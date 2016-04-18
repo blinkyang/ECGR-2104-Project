@@ -15,6 +15,8 @@
  * /
  * *******************************************************************/
 #include"dork.h"
+#include "Profile.h"
+#include <iostream>
 
 int main(int argc, char *argv[])
 {
