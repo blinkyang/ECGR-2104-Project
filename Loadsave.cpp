@@ -8,7 +8,8 @@ class Save {
         char name[20];
     public:
         Save();
-        Save(char& n, 
+        Save(char& n, string level, unsigned int energy, int steps);
+        
 };
 
 int main () {
