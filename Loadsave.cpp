@@ -25,3 +25,13 @@ Save::Save(Save& in_obj)
     energy = in_obj.energy;
     steps = in_obj.steps;
 }
+
+int main()
+{
+    //Save Bob;
+    //"Bob" = Bob.name;
+    //"Terrestrial" = Bob.level;
+    
+return 0;
+    
+}
