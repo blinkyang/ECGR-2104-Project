@@ -3,10 +3,10 @@
 
   class Save {
     private:
-      char name[20];
-      string level;
-      unsigned int energy;
-      int steps;
+      string name = "Unknown"
+      string level = "Terrestrial"
+      unsigned int energy = 15;
+      int steps = 0;
     public:
       Save();
       Save(string n, string l, unsigned int e, int s);
