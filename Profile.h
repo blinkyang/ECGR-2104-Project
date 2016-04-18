@@ -1,9 +1,11 @@
 #ifndef PROFILE_H
 #define PROFILE_H
 
-#include <iostream>
-
-using namespace std;
+namespace boost {
+namespace serialization{
+class access;
+}    
+}
 
 class Profile
 {
@@ -17,6 +19,15 @@ class Profile
         string level;
         signed int energy_level;
         int steps;
+        
+        friend class boost::serialization::access;
+        
+        template<typename Archive>
+        
+        void serialize(Archive& ar, const unsigned version) {
+            ar & user_name & level & energy_level;
+        }
+        }
 };
 
 #endif // PROFILE_H
