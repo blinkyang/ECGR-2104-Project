@@ -18,12 +18,15 @@
 
 int main(int argc, char *argv[])
 {
+	Profile player;
 	display_init();
-	intro_display();
+	//intro_display();
 	clearDisplay(1);
+	player.setName();
+	player.display_info();
 	
-    getch();
-    display_close();
-    return 0;
+	 getch();
+	 display_close();
+	
 }
 
