@@ -40,3 +40,16 @@ void Profile::display_info()
   //  printw("--------------------------------------------------------------------------");
     cout << endl;
 }
+
+int main () {
+    
+    ofstream ofs("save.dat");
+    
+    {
+        boost::archive::text_oarchive oa(ofs);
+        oa << 
+    }
+    
+return 0;
+}
+
