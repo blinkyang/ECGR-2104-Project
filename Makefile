@@ -1,5 +1,5 @@
-resu: display.o main.o 
-	g++  display.o main.o -o resu -lncurses
+resu: display.o main.o Profile.o
+	g++  display.o main.o Profile.o -o resu -lncurses
 
 display.o: display.cpp
 	g++ -c -std=c++11 display.cpp -lncurses
