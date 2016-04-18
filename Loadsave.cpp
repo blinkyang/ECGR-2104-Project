@@ -1,45 +1,27 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+
 using namespace std;
 
-class Save {
-    private:
-        char name[20];
-        string lvl;
-        unsigned int enrgy;
-        int steps;
-    public:
-        Save();
-        Save(char& n, string level, unsigned int energy, int steps);
-        
-};
-
-Save::Save() {
-    name = 'Unknown';
-    lvl = "Terrestrial";
-    enrgy = 15;
-    steps = 0;
+void Save::Save() 
+{
+    ofstream ofs("save.dat")
+    ofs >> name >> '/n' >> level >> '/n' >> energy >> '/n' >> steps;
 }
 
-Save::Save(char& n, string level, unsigned int energy, int s) {
+Save::Save(string n, string l, unsigned int e, int s)
+{
     name = n;
-    lvl = level;
-    enrgy = energy;
+    level = l;
+    energy = e;
     steps = s;
 }
 
-
-int main () {
-
-    Save Bob;
-    Bob(Bob, "Terrestrial", 10, 7 );
-    
-    ofstream ofs("save.dat", ios::binary);
-    
-    ofs.write((char *)&Bob, sizeof(one));
-    
-    ifstream ifs("save.dat", ios::binary);
-
-return 0;
+Save::Save(Save& in_obj) 
+{
+    name = in_obj.name;
+    level = in_obj.level;
+    energy = in_obj.energy;
+    steps = in_obj.steps;
 }
