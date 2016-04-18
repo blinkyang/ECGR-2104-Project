@@ -1,6 +1,5 @@
 #include "dork.h"
 #include "Profile.h"
-#include <assert.h>
 #include <fstream>
 #include <iostream>
 #include <boost/archive/text_iarchive.hpp>
@@ -34,10 +33,10 @@ Profile::Profile(string un, string curr_level, signed int en_lev, int num_steps)
 void Profile::display_info()
 {
     cout << endl;
-    printw("--------------------------------------------------------------------------");
+   // printw("--------------------------------------------------------------------------");
     cout << endl;
     cout << "Welcome, " << user_name << "!" << "\tLevel: " << level << "\tEnergy Level: " << energy_level << "\tSteps: " << steps;
     cout << endl;
-    printw("--------------------------------------------------------------------------");
+  //  printw("--------------------------------------------------------------------------");
     cout << endl;
 }
