@@ -1,15 +1,24 @@
 #include "Profile.h"
-#inclde "dork.h"
+#include "load_save.h"
+#include "dork.h"
 #include <iostream>
 
 using namespace std;
 
 Profile::Profile()
 {
-    user_name = " ";
-    level = "Terrestrial";
-    energy_level = 15;
-    steps = 0;
+    	user_name = " ";
+    	level = "Terrestrial";
+    	energy_level = 15;
+    	steps = 0;
+}
+
+Profile::Profile(string un)
+{
+	user_name = un;
+    	level = "Terrestrial";
+    	energy_level = 15;
+    	steps = 0;
 }
 
 Profile::Profile(string un, string curr_level, int en_lev, int num_steps)
@@ -24,40 +33,66 @@ void Profile::display_info()
 {
     clearDisplay(1);
     
-    printw("--------------------------------------------------------------------------\n");
-    printw("Hello ");
-    printw("%s", user_name.c_str());
-    printw("\tLevel: ");
-    printw("%s", level.c_str());
-    printw("\tEnergy Level: ");
-    printw("%d", energy_level);
-    printw("\tSteps: ");
-    printw("%d", steps);
-    cout << steps << endl;
-    printw("\n--------------------------------------------------------------------------\n");
+	printw("--------------------------------------------------------------------------\n");
+    	printw("Hello ");
+    	printw("%s", user_name.c_str());
+    	printw("\tLevel: ");
+    	printw("%s", level.c_str());
+    	printw("\tEnergy Level: ");
+    	printw("%d", energy_level);
+    	printw("\tSteps: ");
+    	printw("%d", steps);
+    	printw("\n--------------------------------------------------------------------------\n");
+
+	refresh();
 }
 
-void Profile::setName() 
+void Profile::roll()
 {
+	while(/*(x_location < 201 && y_location < 150) ||*/ energy_level > 0)
+	{
+		srand(time(0));
 
-	cout << "What's your name?" << endl;
-	cin >> user_name;
-}
+		display_info();
 
-void Profile::display_banner()
-{
-    ifstream infile("banner.txt");
-    vector<string> content;
-    string line;
+		cout << "Press R to roll: ";
+		cin >> input;
 
-    while(infile)
-    {
-        getline(infile, line);
-        content.push_back(line);
-    }
+		if(input == 'R' || input == 'r')
+		{
+			dice = rand() % 6+1;
+			energy_level--;
+			steps += dice;
+			temp_steps = steps;
+			
+			if(level == "Terrestrial")
+			{
+				x_location = steps;
+			}
+			else if(level == "Abboreal")
+			{
+				steps = 0;
+				y_location = steps;
+			}
+			else if(level == "Aerial")
+			{
+				steps = 0;
+				x_location = steps;
+			}
+		
+			if(temp_steps >= 25)
+			{
+				checkpoint(user_name, level, steps, energy_level, x_location, y_location);
+				temp_steps = 0;
+			}
+		}
+		else
+		{
+			printw("Invalid input. Try again.");
+		
+			roll();
+		}
 
-    for(auto x:content)
-    {
-        cout << x << endl;
-    }
+		display_info();
+	}
 }
