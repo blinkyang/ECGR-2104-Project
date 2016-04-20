@@ -1,10 +1,18 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "Profile.h"
+#include "Loadsave.h"
 
 using namespace std;
 
-void Save::Save() 
+void save() {
+    ofstream ofs("save.dat");
+    
+    ofs >> user_name >> "\n" >> level >> "\n" >> energy_level >> "\n" >> steps;
+}
+
+/*void Save::Save() 
 {
     ofstream ofs("save.dat")
     ofs >> name >> '/n' >> level >> '/n' >> energy >> '/n' >> steps;
@@ -31,7 +39,7 @@ int main()
     //Save Bob;
     //"Bob" = Bob.name;
     //"Terrestrial" = Bob.level;
-    
+*/    
 return 0;
     
 }
