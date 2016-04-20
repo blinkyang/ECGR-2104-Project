@@ -15,15 +15,15 @@ class Profile
 {
     public:
         Profile();
-	    Profile(string);
+	Profile(string);
         Profile(string, string, int, int);
         void display_info();
-	    void roll();
+	void roll();
 
     private:
         string user_name;
         string level;
-	    char input;
+	char input;
         int energy_level;
         int steps;
     	int dice;
