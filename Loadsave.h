@@ -1,7 +1,9 @@
 #IFNDEF 'Loadsave.h'
 #DEFINE 'Loadsave.h'
 
-  class Save {
+void save();
+
+  /*class Save {
     private:
       string name = "Unknown"
       string level = "Terrestrial"
@@ -11,6 +13,6 @@
       Save();
       Save(string n, string l, unsigned int e, int s);
       Save(Save& in_obj);
-  }
+  } */
 
 #ENDIF
