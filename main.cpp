@@ -19,11 +19,12 @@
 int main(int argc, char *argv[])
 {
 	display_init();
-	intro_display();
-	clearDisplay(1);
+	//intro_display();
+	//clearDisplay(1);
+	opening();
 	
-    getch();
-    display_close();
+	getch();
+	display_close();
     return 0;
 }
 
