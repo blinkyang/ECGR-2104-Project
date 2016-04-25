@@ -12,7 +12,7 @@ using namespace std;
 void opening();
 void newGame();
 void load();
-void save(string, string, int, int, int , int);
+void save(string, string, int, int, int, int);
 void checkpoint(string, string, int, int, int, int);
 
 #endif // LOAD_SAVE_H
