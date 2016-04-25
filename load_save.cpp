@@ -41,7 +41,7 @@ void load()
 	int y;
 
 	load_prof >> name >> level >> en_lev
-		  >> num_steps >> x >> y;
+		  >> num_steps >> y >> x;
 
 	Profile player(name, level, en_lev, num_steps, y, x);
 	player.roll();
