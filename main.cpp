@@ -15,6 +15,7 @@
  * /
  * *******************************************************************/
 #include"dork.h"
+#include "load_save.h"
 
 int main(int argc, char *argv[])
 {
