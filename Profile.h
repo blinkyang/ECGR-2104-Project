@@ -6,7 +6,6 @@
 #include <vector>
 #include <stdlib.h>
 #include <time.h>
-#include <ctime>
 #include <ncurses.h>
 
 using namespace std;
