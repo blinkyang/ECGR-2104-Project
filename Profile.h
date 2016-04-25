@@ -16,7 +16,7 @@ class Profile
     public:
         Profile();
 	Profile(string);
-        Profile(string, string, int, int);
+        Profile(string, string, int, int, int, int);
         void display_info();
 	void roll();
 
@@ -26,10 +26,10 @@ class Profile
 	char input;
         int energy_level;
         int steps;
-    	int dice;
-    	int x_location = 0;
-    	int y_location = 0;
-    	int temp_steps;
+	int dice;
+	int y_location = 0;
+	int x_location = 0;
+	int temp_steps = 0;
 };
 
 #endif // PROFILE_H
