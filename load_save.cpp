@@ -33,22 +33,34 @@ void opening()
 void load()
 {
 	ifstream load_prof("profile.dat");
+	string name;
+	string level;
+	int en_lev;
+	int num_steps;
+	int x;
+	int y;
+
+	load_prof >> name >> level >> en_lev
+		  >> num_steps >> x >> y;
+
+	Profile player(name, level, en_lev, num_steps, y, x);
+	player.roll();
 }
 
-void save(string name, string level, int num_steps, int en_level, int x, int y)
+void save(string name, string level, int en_lev, int num_steps, int y, int x)
 {
 	ofstream profile("profile.dat");
 
 	profile << name << endl
 		<< level << endl
+		<< en_lev << endl
 		<< num_steps << endl
-		<< en_level << endl
 		<< y << ", " << x << endl;
 } 
 
-void checkpoint(string name, string level, int num_steps, int en_lev, int x, int y)
+void checkpoint(string name, string level, int num_steps, int en_lev, int y, int x)
 {
-	save(name, level, num_steps, en_lev, x, y);
+	save(name, level, num_steps, en_lev, y, x);
 }
 
 void newGame() 
@@ -59,6 +71,5 @@ void newGame()
 	cin >> name;
 
 	Profile player(name);
-	player.display_info();
 	player.roll();
 }
