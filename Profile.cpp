@@ -21,12 +21,15 @@ Profile::Profile(string un)
     	steps = 0;
 }
 
-Profile::Profile(string un, string curr_level, int en_lev, int num_steps)
+Profile::Profile(string un, string curr_level, int en_lev, int num_steps, int y, int x)
 {
-    user_name = un;
-    level = curr_level;
-    energy_level = en_lev;
-    steps = num_steps;
+    	user_name = un;
+    	level = curr_level;
+    	energy_level = en_lev;
+    	steps = num_steps;
+	y_location = y;
+	x_location = x;
+	
 }
 
 void Profile::display_info()
@@ -63,7 +66,7 @@ void Profile::roll()
 			dice = rand() % 6+1;
 			energy_level--;
 			steps += dice;
-			temp_steps = steps;
+			temp_steps += dice;
 			
 			if(level == "Terrestrial")
 			{
@@ -79,12 +82,13 @@ void Profile::roll()
 				steps = 0;
 				x_location = steps;
 			}
-		
+
 			if(temp_steps >= 25)
 			{
-				checkpoint(user_name, level, steps, energy_level, x_location, y_location);
+				checkpoint(user_name, level, energy_level, steps, y_location, x_location);
 				temp_steps = 0;
 			}
+		
 		}
 		else
 		{
