@@ -16,17 +16,19 @@
  * *******************************************************************/
 #include"dork.h"
 #include "Profile.h"
+#include "load_save.h"
+#include "event_handler.h"
+#include <iostream>
 
 int main(int argc, char *argv[])
 {
-	Profile bob;
 	display_init();
-	intro_display();
-	clearDisplay(1);
-	bob.display_info();
+    	//intro_display();
+    	//clearDisplay(1);
+	opening();
+	//event_data("chat", "aerial", 15, 31, 150, 201);
 	
-    getch();
-    display_close();
-    return 0;
+    	getch();
+    	display_close();
+    	return 0;
 }
-
