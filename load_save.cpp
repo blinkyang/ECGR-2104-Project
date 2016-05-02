@@ -11,8 +11,8 @@ void opening()
 
 	clearDisplay(1);	
 
-	cout << "Load or new game? (L/N): ";
-	cin >> input;
+	printw("Load or new game? (L/N): ");
+	input = getch();
 
 	if(input == 'l' || input == 'L')
 	{
@@ -55,7 +55,8 @@ void save(string name, string level, int en_lev, int num_steps, int y, int x)
 		<< level << endl
 		<< en_lev << endl
 		<< num_steps << endl
-		<< y << ", " << x << endl;
+		<< y << endl
+		<< x << endl;
 } 
 
 void checkpoint(string name, string level, int num_steps, int en_lev, int y, int x)
