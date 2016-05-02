@@ -108,8 +108,8 @@ void print_event(string n, string l, int en, int s, int yCoord, int xCoord, vect
 	{
 		if(yCoord == temp_yC[i] && xCoord == temp_xC[i])
 		{
-			cout << desc[i] << endl;
-			//printw("%s", desc[i].c_str());
+			printw("%s", desc[i].c_str());
+			printw("\n\n");
 			checkpoint(n, l, en, s, yCoord, xCoord);
 		}
 	}
