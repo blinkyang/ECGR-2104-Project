@@ -20,6 +20,7 @@ void event_data(string name, string lev, int en_lev, int num_steps, int yC, int 
 	vector<int> x_C;
 	vector<int> y_L;
 	vector<int> x_L;
+	vector<int> add_en;
 	
 	while(getline(infile, temp, '^'))
 	{
@@ -64,11 +65,11 @@ void event_data(string name, string lev, int en_lev, int num_steps, int yC, int 
 		question.push_back(content[i+5]);
 	}
 
-	convert(y_coord, x_coord, y_location, x_location, y_C, x_C, y_L, x_L);
-	print_event(name, lev, en_lev, num_steps, yC, xC, event, response, question, y_C, x_C, y_L, x_L);
+	convert(y_coord, x_coord, y_location, x_location, energy, y_C, x_C, y_L, x_L, add_en);
+	print_event(name, lev, en_lev, num_steps, yC, xC, event, response, question, y_C, x_C, y_L, x_L, add_en);
 }
 
-void convert(vector<string>& yC, vector<string>& xC, vector<string>& yL, vector<string>& xL, vector<int>& temp_yC, vector<int>& temp_xC, vector<int>& temp_yL, vector<int>& temp_xL)
+void convert(vector<string>& yC, vector<string>& xC, vector<string>& yL, vector<string>& xL, vector<string>& en, vector<int>& temp_yC, vector<int>& temp_xC, vector<int>& temp_yL, vector<int>& temp_xL, vector<int>& energy_level)
 {
 	int temp;
 	string str;
@@ -100,16 +101,40 @@ void convert(vector<string>& yC, vector<string>& xC, vector<string>& yL, vector<
 		temp = stol(str.substr(0));
 		temp_xL.push_back(temp);
 	}
+
+	for(int i = 0; i < en.size(); i++)
+	{
+		str = en[i];
+		temp = stol(str.substr(0));
+		energy_level.push_back(temp);
+	}
 }
 
-void print_event(string n, string l, int en, int s, int yCoord, int xCoord, vector<string>& desc, vector<string>& resp, vector<string>& ques, vector<int>& temp_yC, vector<int>& temp_xC, vector<int>& temp_yL, vector<int>& temp_xL)
+void print_event(string n, string l, int en, int s, int yCoord, int xCoord, vector<string>& desc, vector<string>& resp, vector<string>& ques, vector<int>& temp_yC, vector<int>& temp_xC, vector<int>& temp_yL, vector<int>& temp_xL, vector<int>& energy)
 {
+	int response = 0;
+	int question = 0;
+	
 	for(int i = 0; i < 199; i++)
 	{
-		if(yCoord == temp_yC[i] && xCoord == temp_xC[i])
+		if(yCoord == temp_yC[i] && xCoord == temp_xC[i] && response == 0 && question == 0)
 		{
 			printw("%s", desc[i].c_str());
 			printw("\n\n");
+			
+			yCoord += temp_yL[i];
+			xCoord += temp_xL[i];
+			en += energy[i];
+			
+			if(l == "Terrestrial" || l == "Aerial")
+			{
+				s += temp_xL[i];
+			}
+			else
+			{
+				s += temp_yL[i];
+			}
+	
 			checkpoint(n, l, en, s, yCoord, xCoord);
 		}
 	}
