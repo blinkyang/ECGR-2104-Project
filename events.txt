@@ -1,200 +1,200 @@
-Event Location,Event Description,Response,Energy,Location,Question
-"0,0","Welcome to Dorkville, it's a bright sunny day thus far, let's get started",0,0,"0,0",0
-"0,4","You found a skateboard, hop on it and move 2 places",0,0,"0,2",0
-"0,2","You see a giant sculpture of a soldier, possibly George",0,0,"0,0",0
-"0,7","Found a bag of chips, gain 5 energy",0,5,"0,0",0
-"0,8","You dropped your wallet after that sculpture, move back 6 places",0,0,"0,-6",0
-"0,6","I see a bank vole, the only bank where you can't get money. Haha!",0,0,"0,0",0
-"0,50","You see a willow tree, you wanna climb? Remember ghost may appear!",1,0,"0,1",0
-"0,100","You see a ash tree, the sacred to Celts, you can climb it if you want",1,0,"0,1",0
-"0,150","That's a Oak, just like the one in Oley. Can we climb this one?",1,0,"0,1",0
-"0,200","You see a giant wall, I cannot climb this, I choose a wrong traveler Doh!",0,0,"0,0",0
-"0,70",What do you think your dream job would be?,1,0,"0,0",1
-"0,120","Let me ask you this, what genre music you like?",1,0,"0,0",1
-"0,40",Is there a  sport that you like the most?,1,0,"0,0",1
-"25,50",Please provide a secret phrase? Remember it for future,1,0,"0,0",1
-"25,100",Please provide a secret phrase? Remember it for future,1,0,"0,0",1
-"25,150",Please provide a secret phrase? Remember it for future,1,0,"0,0",1
-"75,150","Just to know you better answer me, What is your favorite color?",1,0,"0,0",1
-"75,100","Just to know you better answer me, What is your favorite color?",1,0,"0,0",1
-"75,50","Just to know you better answer me, What is your favorite color?",1,0,"0,0",1
-"150,200","You are at the Paradise door, Provide the secret phrase",1,0,"0,0",1
-"150,201",Ah ha!! we entered the paradise. Have fun!!!,0,0,"0,0",0
-"150,70",What do you think your dream job would be?,1,0,"0,0",1
-"150,120","Let me ask you this, what genre music you like?",1,0,"0,0",1
-"110,150",Aww!!! A Meganeura!!! It wants to know you favorite color,1,0,"0,0",1
-"150,170","Oh my!! A giant pacaran, they climb? It wants to know your dream job?",1,0,"0,0",1
-"110,50",Aww!!! A Meganeura!!! It wants to know you favorite color,1,0,"0,0",1
-"110,100",Aww!!! A Meganeura!!! It wants to know you favorite color,1,0,"0,0",1
-"0,130",There is a gate in front of you and it needs to know your favorite sport,1,0,"0,0",1
-"150,130",There is a gate in front of you and it needs to know your favorite sport,1,0,"0,0",1
-"150,160","A scary Titanaboa, reply him with your genre of music. Quick!!!",1,0,"0,0",1
-"111,150",I have never seen such a giant Dragon fly,0,0,"0,0",0
-"111,100",I have never seen such a giant Dragon fly,0,0,"0,0",0
-"111,50",I have never seen such a giant Dragon fly,0,0,"0,0",0
-"150,161",Cor! I think he likes the Beatles. Crazy snake,0,0,"0,0",0
-"0,131",Never imagined a speaking gate. Should have asked his school,0,0,"0,0",0
-"150,131",Never imagined a speaking gate. Should have asked his school,0,0,"0,0",0
-"150,171",A big lazy one asking about dream job. Ridiculous!!!,0,0,"0,0",0
-"0,14","I think I saw something, let's go back 3 places",0,0,"0,-3",0
-"0,37","Tripped over a stone, back 3 places",0,0,"0,-3",0
-"0,56",A strong gust of wind moved you 4 places,0,0,"0,-4",0
-"150,56",A strong gust of wind moved you 4 places,0,0,"0,-4",0
-"0,74","I may have to look at that store, move back 3 places",0,0,"0,-3",0
-"0,71",A store! Not sure what they have,0,0,"0,0",0
-"150,74","I may have to look at that store, move back 3 places",0,0,"0,-3",0
-"150,71",A store on clouds!!! Thats first for me,0,0,"0,0",0
-"0,95","A cycle hit you, move back 5 places to hospital",0,0,"0,-5",0
-"150,95","A flying cycle hit you, move back 5 places to hospital",0,0,"0,-5",0
-"0,90",Thats a hospital over there. Not for Hunky Dory!,0,0,"0,0",0
-"150,90",Thats a hospital over there. Not for Hunky Dory!,0,0,"0,0",0
-"0,112","You lost your hat, move back 4 places and get it",0,0,"0,-4",0
-"150,112","You lost your hat, move back 4 places and get it",0,0,"0,-4",0
-"0,147","You were hit by the truck, start over at Ash tree",0,0,"0,-47",0
-"0,143",I sense a danger in 4 places,0,0,"0,0",0
-"150,143",I sense a danger in 4 places. A skyfall!!!,0,0,"0,0",0
-"150,147",You lost your balance and fall back to ground,0,0,"-150,0",0
-"150,50","You arrived at the Willow tree top, you can fly from here",0,0,"0,0",0
-"150,100",You arrived at the Ash tree top,0,0,"0,0",0
-"150,150",You arrived at the Oak tree top,0,0,"0,0",0
-"150,180","You lost a chain, move back 2 places",0,0,"0,-2",0
-"0,180",I don't see anything here. Are we in the right path?,0,0,"0,0",0
-"0,155","I am so tired, let's rest at Oak. Move back 5 places",0,0,"0,-5",0
-"150,155","I am so tired, let's rest at Oak tree top. Move back 5 places",0,0,"0,-5",0
-"0,125","We enter a graveyard, it's spooky",0,0,"0,0",0
-"150,125",What!! A graveyard!! here?? Ah! ,0,0,"0,0",0
-"0,25",We are entering paradise market. Such a lovely place,0,0,"0,0",0
-"0,75",This is Caesar's. Not the food chain but a garden,0,0,"0,0",0
-"150,75",This is Caesar's. Not the food chain but a garden,0,0,"0,0",0
-"150,175","We enter the Hanging gardens, we are so close to Paradise",0,0,"0,0",0
-"150,125",That's a beautiful sunset. Oh we may have to hurry.,0,0,"0,0",0
-"0,125",That's a beautiful sunset. Oh we may have to hurry.,0,0,"0,0",0
-"0,80",I see some Ferals! Lovely creatures,0,0,"0,0",0
-"150,80",I see some Ferals! Lovely creatures,0,0,"0,0",0
-"0,16","Let's have some Bangers and Mash, Gives you 6 energy",0,6,"0,0",0
-"0,18","I see some baked beans, You wanna eat or store? Can store for 5 rolls",1,3,"0,0",0
-"0,22","That's a hoverboard, move 3 places",0,0,"0,3",0
-"0,29","Ooo! That place has Cornish pasty, lets gain some energy",0,5,"0,0",0
-"0,47","I feel sick, let rest over there. Loose 3 energy",0,-3,"0,0",0
-"0,52",Lets have some drinks.,0,1,"0,0",0
-"150,52",Lets have some drinks.,0,1,"0,0",0
-"0,64",You like Pimme's cooler? Come on Lets try,0,2,"0,-2",0
-"0,83",I see Poppies. I am dying to eat,0,4,"0,0",0
-"150,64",You like Pimme's cooler? Come on Lets try,0,2,"0,-2",0
-"150,83",I see Poppies. Cods on clouds!,0,4,"0,0",0
-"0,128",That's a buzzard.Flew right pass us,0,0,"0,0",0
-"150,128",That's a buzzard.Flew right pass us,0,0,"0,0",0
-"0,104",Let's get that Tube. Move 3 places,0,0,"0,3",0
-"0,107",We ran too much and lost energy,0,-5,"0,0",0
-"0,126","We traveled too much, get some Bubble & squeak",0,5,"0,0",0
-"150,104",Let's get that Jota. Move 3 places,0,0,"0,3",0
-"150,107",We ran too much and lost energy,0,-5,"0,0",0
-"150,126","We traveled too much, get some Bubble & squeak",0,5,"0,0",0
-"0,137",We might find a gift soon,0,0,"0,0",0
-"150,137",We might find a gift soon,0,0,"0,0",0
-"0,140",My my!! Shepherds Pie. Gain 6 energy,0,6,"0,0",0
-"150,140",My my!! Shepherds Pie. Gain 6 energy,0,6,"0,0",0
-"150,152",That place looked terrible but we found the pie,0,0,"0,0",0
-"150,167",A Toad-In-the-Hole to restore energy,0,6,"0,0",0
-"150,173",You got scared by a Twany Owl. Loose 4 energy,0,-4,"0,0",0
-"150,183",Tie your shoes. Loose 3 energy,0,-3,"0,0",0
-"150,192",Some Tea finally!,0,3,"0,0",0
-"1,50",We are starting the quest on trees. We might find something interesting,0,0,"0,0",0
-"1,100",We are starting the quest on trees. We might find something interesting,0,0,"0,0",0
-"1,150",We are starting the quest on trees. We might find something interesting,0,0,"0,0",0
-"15,50","Thats a koala, busy eating.",0,0,"0,0",0
-"32,50",Lemur un-noticible. Thats a flying one.,0,0,"0,0",0
-"72,50",Woodpecker the lumberjacks,0,0,"0,0",0
-"102,50","I see a tree kangaroo, They climb??",0,0,"0,0",0
-"123,50",Orangutan wants some food. We loose energy,0,-5,"0,0",0
-"15,150","Thats a koala, busy eating.",0,0,"0,0",0
-"32,150",Lemur un-noticible. Thats a flying one.,0,0,"0,0",0
-"72,150",Woodpecker the lumberjacks,0,0,"0,0",0
-"102,150","I see a tree kangaroo, They climb??",0,0,"0,0",0
-"123,150",Orangutan wants some food. We loose energy,0,-5,"0,0",0
-"15,100","Thats a koala, busy eating.",0,0,"0,0",0
-"32,100",Lemur un-noticible. Thats a flying one.,0,0,"0,0",0
-"72,100",Woodpecker the lumberjacks,0,0,"0,0",0
-"102,100","I see a tree kangaroo, They climb??",0,0,"0,0",0
-"123,100",Orangutan wants some food. We loose energy,0,-5,"0,0",0
-"136,50","A scary Owl, looking at us. It's getting dark",0,0,"0,0",0
-"136,100","A scary Owl, looking at us. It's getting dark",0,0,"0,0",0
-"136,150","A scary Owl, looking at us. It's getting dark",0,0,"0,0",0
-"4,50",It's hard to climb and slipped,0,0,"-2,0",0
-"2,50","I never tried this, climb a tree like in Adventureland",0,0,"0,0",0
-"17,50","A tree branch broke, back 3 places",0,-2,"-3,0",0
-"14,50",We should be careful this branch looks weak,0,0,"0,0",0
-"58,50","Slipped by a fungus, loose 5 places",0,0,"-5,0",0
-"53,50","It looks slippery from here, careful",0,0,"0,0",0
-"94,50",Back 14 places slipped from a big branch,0,0,"0,0",0
-"90,50",There are lots of fruits to gather here,0,-4,"-14,0",0
-"128,50",Looks dark from here. Look out for nocs,0,0,"0,0",0
-"142,50","A bat on your, you fell on to ground",0,-6,"-142,0",0
-"4,100",It's hard to climb and slipped,0,0,"-2,0",0
-"2,100","I never tried this, climb a tree like in Adventureland",0,0,"0,0",0
-"17,100","A tree branch broke, back 3 places",0,-2,"-3,0",0
-"14,100",We should be careful this branch looks weak,0,0,"0,0",0
-"58,100","Slipped by a fungus, loose 5 places",0,0,"-5,0",0
-"53,100","It looks slippery from here, careful",0,0,"0,0",0
-"94,100",Back 14 places slipped from a big branch,0,0,"0,0",0
-"90,100",There are lots of fruits to gather here,0,-4,"-14,0",0
-"128,100",Looks dark from here. Look out for nocs,0,0,"0,0",0
-"142,100","A bat on your, you fell on to ground",0,-6,"-142,0",0
-"4,150",It's hard to climb and slipped,0,0,"-2,0",0
-"2,150","I never tried this, climb a tree like in Adventureland",0,0,"0,0",0
-"17,150","A tree branch broke, back 3 places",0,-2,"-3,0",0
-"14,150",We should be careful this branch looks weak,0,0,"0,0",0
-"58,150","Slipped by a fungus, loose 5 places",0,0,"-5,0",0
-"53,150","It looks slippery from here, careful",0,0,"0,0",0
-"94,150",Back 14 places slipped from a big branch,0,0,"0,0",0
-"90,150",There are lots of fruits to gather here,0,-4,"-14,0",0
-"128,150",Looks dark from here. Look out for nocs,0,0,"0,0",0
-"142,150","A bat on your, you fell on to ground",0,-6,"-142,0",0
-"3,50",We can find lots of fruits and maximize our energy,0,0,"0,0",0
-"7,50","There are some Aronia, Eat or Store",1,2,"0,0",0
-"13,50",Apricots!! Told ya we can find fruits,0,2,"0,0",0
-"21,50",I see Elderberries. Eat or Store?,1,2,"0,0",0
-"28,50",Some plum for you,0,2,"0,0",0
-"37,50",We might not find food on top. Lets store them,0,0,"0,0",0
-"46,50","Those are Quince, do you how to eat it?",0,3,"-2,0",0
-"48,50",Start storing them we need it for future,0,0,"0,0",0
-"63,50",Some Prune for you. Eat or Store,1,3,"0,0",0
-"71,50",Wild Cranberry!! This is what I was waiting for,0,3,"-5,0",0
-"3,100",We can find lots of fruits and maximize our energy,0,0,"0,0",0
-"7,100","There are some Aronia, Eat or Store",1,2,"0,0",0
-"13,100",Apricots!! Told ya we can find fruits,0,2,"0,0",0
-"21,100",I see Elderberries. Eat or Store?,1,2,"0,0",0
-"28,100",Some plum for you,0,2,"0,0",0
-"37,100",We might not find food on top. Lets store them,0,0,"0,0",0
-"46,100","Those are Quince, do you how to eat it?",0,3,"-2,0",0
-"48,100",Start storing them we need it for future,0,0,"0,0",0
-"63,100",Some Prune for you. Eat or Store,1,3,"0,0",0
-"71,100",Wild Cranberry!! This is what I was waiting for,0,3,"-5,0",0
-"3,150",We can find lots of fruits and maximize our energy,0,0,"0,0",0
-"7,150","There are some Aronia, Eat or Store",1,2,"0,0",0
-"13,150",Apricots!! Told ya we can find fruits,0,2,"0,0",0
-"21,150",I see Elderberries. Eat or Store?,1,2,"0,0",0
-"28,150",Some plum for you,0,2,"0,0",0
-"37,150",We might not find food on top. Lets store them,0,0,"0,0",0
-"46,150","Those are Quince, do you how to eat it?",0,3,"-2,0",0
-"48,150",Start storing them we need it for future,0,0,"0,0",0
-"63,150",Some Prune for you. Eat or Store,1,3,"0,0",0
-"71,150",Wild Cranberry!! This is what I was waiting for,0,3,"-5,0",0
-"98,50","You seems to be tired, loose 1 energy",0,-1,"0,0",0
-"133,50","You hit a branch, loose 3 energy",0,-3,"0,0",0
-"106,50","Oxygen level is down, loose 5 energy",0,-5,"0,0",0
-"57,50","Found a creeper, move 3 places",0,-2,"3,0",0
-"78,50","Climb on a monkey back, move 4 places",0,0,"4,0",0
-"84,50","Found a friendly gorilla, move 5 places",0,0,"5,0",0
-"98,100","You seems to be tired, loose 1 energy",0,-1,"0,0",0
-"133,100","You hit a branch, loose 3 energy",0,-3,"0,0",0
-"106,100","Oxygen level is down, loose 5 energy",0,-5,"0,0",0
-"57,100","Found a creeper, move 3 places",0,-2,"3,0",0
-"78,100","Climb on a monkey back, move 4 places",0,0,"4,0",0
-"84,100","Found a friendly gorilla, move 5 places",0,0,"5,0",0
-"98,150","You seems to be tired, loose 1 energy",0,-1,"0,0",0
-"133,150","You hit a branch, loose 3 energy",0,-3,"0,0",0
-"106,150","Oxygen level is down, loose 5 energy",0,-5,"0,0",0
-"57,150","Found a creeper, move 3 places",0,-2,"3,0",0
-"78,150","Climb on a monkey back, move 4 places",0,0,"4,0",0
-"84,150","Found a friendly gorilla, move 5 places",0,0,"5,0",0
+Event Location^Event Description^Response^Energy^Location^Question^
+0,0^Welcome to Paradise City, it's a bright sunny day thus far, let's get started^0^0^0,0^0^
+0,4^You found a skateboard, hop on it and move 2 places^0^0^0,2^0^
+0,2^You see a giant sculpture of a soldier, possibly George^0^0^0,0^0^
+0,7^Found a bag of chips, gain 5 energy^0^5^0,0^0^
+0,8^You dropped your wallet after that sculpture, move back 6 places^0^0^0,-6^0^
+0,6^I see a bank vole, the only bank where you can't get money. Haha!^0^0^0,0^0^
+0,50^You see a willow tree, you wanna climb? Remember ghost may appear!^1^0^0,1^0^
+0,100^You see a ash tree, the sacred to Celts, you can climb it if you want^1^0^0,1^0^
+0,150^That's a Oak, just like the one in Oley. Can we climb this one?^1^0^0,1^0^
+0,200^You see a giant wall, I cannot climb this, I choose a wrong traveler Doh!^0^0^0,0^0^
+0,70^What do you think your dream job would be?^1^0^0,0^1^
+0,120^Let me ask you this, what genre music you like?^1^0^0,0^1^
+0,40^Is there a  sport that you like the most?^1^0^0,0^1^
+25,50^Please provide a secret phrase? Remember it for future^1^0^0,0^1^
+25,100^Please provide a secret phrase? Remember it for future^1^0^0,0^1^
+25,150^Please provide a secret phrase? Remember it for future^1^0^0,0^1^
+75,150^Just to know you better answer me, What is your favorite color?^1^0^0,0^1^
+75,100^Just to know you better answer me, What is your favorite color?^1^0^0,0^1^
+75,50^Just to know you better answer me, What is your favorite color?^1^0^0,0^1^
+150,200^You are at the Paradise door, Provide the secret phrase^1^0^0,0^1^
+150,201^Ah ha!! we entered the paradise. Have fun!!!^0^0^0,0^0^
+150,70^What do you think your dream job would be?^1^0^0,0^1^
+150,120^Let me ask you this, what genre music you like?^1^0^0,0^1^
+110,150^Aww!!! A Meganeura!!! It wants to know you favorite color^1^0^0,0^1^
+150,170^Oh my!! A giant pacaran, they climb? It wants to know your dream job?^1^0^0,0^1^
+110,50^Aww!!! A Meganeura!!! It wants to know you favorite color^1^0^0,0^1^
+110,100^Aww!!! A Meganeura!!! It wants to know you favorite color^1^0^0,0^1^
+0,130^There is a gate in front of you and it needs to know your favorite sport^1^0^0,0^1^
+150,130^There is a gate in front of you and it needs to know your favorite sport^1^0^0,0^1^
+150,160^A scary Titanaboa, reply him with your genre of music. Quick!!!^1^0^0,0^1^
+111,150^I have never seen such a giant Dragon fly^0^0^0,0^0^
+111,100^I have never seen such a giant Dragon fly^0^0^0,0^0^
+111,50^I have never seen such a giant Dragon fly^0^0^0,0^0^
+150,161^Cor! I think he likes the Beatles. Crazy snake^0^0^0,0^0^
+0,131^Never imagined a speaking gate. Should have asked his school^0^0^0,0^0^
+150,131^Never imagined a speaking gate. Should have asked his school^0^0^0,0^0^
+150,171^A big lazy one asking about dream job. Ridiculous!!!^0^0^0,0^0^
+0,14^I think I saw something, let's go back 3 places^0^0^0,-3^0^
+0,37^Tripped over a stone, back 3 places^0^0^0,-3^0^
+0,56^A strong gust of wind moved you 4 places^0^0^0,-4^0^
+150,56^A strong gust of wind moved you 4 places^0^0^0,-4^0^
+0,74^I may have to look at that store, move back 3 places^0^0^0,-3^0^
+0,71^A store! Not sure what they have^0^0^0,0^0^
+150,74^I may have to look at that store, move back 3 places^0^0^0,-3^0^
+150,71^A store on clouds!!! Thats first for me^0^0^0,0^0^
+0,95^A cycle hit you, move back 5 places to hospital^0^0^0,-5^0^
+150,95^A flying cycle hit you, move back 5 places to hospital^0^0^0,-5^0^
+0,90^Thats a hospital over there. Not for Hunky Dory!^0^0^0,0^0^
+150,90^Thats a hospital over there. Not for Hunky Dory!^0^0^0,0^0^
+0,112^You lost your hat, move back 4 places and get it^0^0^0,-4^0^
+150,112^You lost your hat, move back 4 places and get it^0^0^0,-4^0^
+0,147^You were hit by the truck, start over at Ash tree^0^0^0,-47^0^
+0,143^I sense a danger in 4 places^0^0^0,0^0^
+150,143^I sense a danger in 4 places. A skyfall!!!^0^0^0,0^0^
+150,147^You lost your balance and fall back to ground^0^0^-150,0^0^
+150,50^You arrived at the Willow tree top, you can fly from here^0^0^0,0^0^
+150,100^You arrived at the Ash tree top^0^0^0,0^0^
+150,150^You arrived at the Oak tree top^0^0^0,0^0^
+150,180^You lost a chain, move back 2 places^0^0^0,-2^0^
+0,180^I don't see anything here. Are we in the right path?^0^0^0,0^0^
+0,155^I am so tired, let's rest at Oak. Move back 5 places^0^0^0,-5^0^
+150,155^I am so tired, let's rest at Oak tree top. Move back 5 places^0^0^0,-5^0^
+0,125^We enter a graveyard, it's spooky^0^0^0,0^0^
+150,125^What!! A graveyard!! here?? Ah! ^0^0^0,0^0^
+0,25^We are entering paradise market. Such a lovely place^0^0^0,0^0^
+0,75^This is Caesar's. Not the food chain but a garden^0^0^0,0^0^
+150,75^This is Caesar's. Not the food chain but a garden^0^0^0,0^0^
+150,175^We enter the Hanging gardens, we are so close to Paradise^0^0^0,0^0^
+150,125^That's a beautiful sunset. Oh we may have to hurry.^0^0^0,0^0^
+0,125^That's a beautiful sunset. Oh we may have to hurry.^0^0^0,0^0^
+0,80^I see some Ferals! Lovely creatures^0^0^0,0^0^
+150,80^I see some Ferals! Lovely creatures^0^0^0,0^0^
+0,16^Let's have some Bangers and Mash, Gives you 6 energy^0^6^0,0^0^
+0,18^I see some baked beans, You wanna eat or store? Can store for 5 rolls^1^3^0,0^0^
+0,22^That's a hoverboard, move 3 places^0^0^0,3^0^
+0,29^Ooo! That place has Cornish pasty, lets gain some energy^0^5^0,0^0^
+0,47^I feel sick, let rest over there. Loose 3 energy^0^-3^0,0^0^
+0,52^Lets have some drinks.^0^1^0,0^0^
+150,52^Lets have some drinks.^0^1^0,0^0^
+0,64^You like Pimme's cooler? Come on Lets try^0^2^0,-2^0^
+0,83^I see Poppies. I am dying to eat^0^4^0,0^0^
+150,64^You like Pimme's cooler? Come on Lets try^0^2^0,-2^0^
+150,83^I see Poppies. Cods on clouds!^0^4^0,0^0^
+0,128^That's a buzzard.Flew right pass us^0^0^0,0^0^
+150,128^That's a buzzard.Flew right pass us^0^0^0,0^0^
+0,104^Let's get that Tube. Move 3 places^0^0^0,3^0^
+0,107^We ran too much and lost energy^0^-5^0,0^0^
+0,126^We traveled too much, get some Bubble & squeak^0^5^0,0^0^
+150,104^Let's get that Jota. Move 3 places^0^0^0,3^0^
+150,107^We ran too much and lost energy^0^-5^0,0^0^
+150,126^We traveled too much, get some Bubble & squeak^0^5^0,0^0^
+0,137^We might find a gift soon^0^0^0,0^0^
+150,137^We might find a gift soon^0^0^0,0^0^
+0,140^My my!! Shepherds Pie. Gain 6 energy^0^6^0,0^0^
+150,140^My my!! Shepherds Pie. Gain 6 energy^0^6^0,0^0^
+150,152^That place looked terrible but we found the pie^0^0^0,0^0^
+150,167^A Toad-In-the-Hole to restore energy^0^6^0,0^0^
+150,173^You got scared by a Twany Owl. Loose 4 energy^0^-4^0,0^0^
+150,183^Tie your shoes. Loose 3 energy^0^-3^0,0^0^
+150,192^Some Tea finally!^0^3^0,0^0^
+1,50^We are starting the quest on trees. We might find something interesting^0^0^0,0^0^
+1,100^We are starting the quest on trees. We might find something interesting^0^0^0,0^0^
+1,150^We are starting the quest on trees. We might find something interesting^0^0^0,0^0^
+15,50^Thats a koala, busy eating.^0^0^0,0^0^
+32,50^Lemur un-noticible. Thats a flying one.^0^0^0,0^0^
+72,50^Woodpecker the lumberjacks^0^0^0,0^0^
+102,50^I see a tree kangaroo, They climb??^0^0^0,0^0^
+123,50^Orangutan wants some food. We loose energy^0^-5^0,0^0^
+15,150^Thats a koala, busy eating.^0^0^0,0^0^
+32,150^Lemur un-noticible. Thats a flying one.^0^0^0,0^0^
+72,150^Woodpecker the lumberjacks^0^0^0,0^0^
+102,150^I see a tree kangaroo, They climb??^0^0^0,0^0^
+123,150^Orangutan wants some food. We loose energy^0^-5^0,0^0^
+15,100^Thats a koala, busy eating.^0^0^0,0^0^
+32,100^Lemur un-noticible. Thats a flying one.^0^0^0,0^0^
+72,100^Woodpecker the lumberjacks^0^0^0,0^0^
+102,100^I see a tree kangaroo, They climb??^0^0^0,0^0^
+123,100^Orangutan wants some food. We loose energy^0^-5^0,0^0^
+136,50^A scary Owl, looking at us. It's getting dark^0^0^0,0^0^
+136,100^A scary Owl, looking at us. It's getting dark^0^0^0,0^0^
+136,150^A scary Owl, looking at us. It's getting dark^0^0^0,0^0^
+4,50^It's hard to climb and slipped^0^0^-2,0^0^
+2,50^I never tried this, climb a tree like in Adventureland^0^0^0,0^0^
+17,50^A tree branch broke, back 3 places^0^-2^-3,0^0^
+14,50^We should be careful this branch looks weak^0^0^0,0^0^
+58,50^Slipped by a fungus, loose 5 places^0^0^-5,0^0^
+53,50^It looks slippery from here, careful^0^0^0,0^0^
+94,50^Back 14 places slipped from a big branch^0^0^0,0^0^
+90,50^There are lots of fruits to gather here^0^-4^-14,0^0^
+128,50^Looks dark from here. Look out for nocs^0^0^0,0^0^
+142,50^A bat on your, you fell on to ground^0^-6^-142,0^0^
+4,100^It's hard to climb and slipped^0^0^-2,0^0^
+2,100^I never tried this, climb a tree like in Adventureland^0^0^0,0^0^
+17,100^A tree branch broke, back 3 places^0^-2^-3,0^0^
+14,100^We should be careful this branch looks weak^0^0^0,0^0^
+58,100^Slipped by a fungus, loose 5 places^0^0^-5,0^0^
+53,100^It looks slippery from here, careful^0^0^0,0^0^
+94,100^Back 14 places slipped from a big branch^0^0^0,0^0^
+90,100^There are lots of fruits to gather here^0^-4^-14,0^0^
+128,100^Looks dark from here. Look out for nocs^0^0^0,0^0^
+142,100^A bat on your, you fell on to ground^0^-6^-142,0^0^
+4,150^It's hard to climb and slipped^0^0^-2,0^0^
+2,150^I never tried this, climb a tree like in Adventureland^0^0^0,0^0^
+17,150^A tree branch broke, back 3 places^0^-2^-3,0^0^
+14,150^We should be careful this branch looks weak^0^0^0,0^0^
+58,150^Slipped by a fungus, loose 5 places^0^0^-5,0^0^
+53,150^It looks slippery from here, careful^0^0^0,0^0^
+94,150^Back 14 places slipped from a big branch^0^0^0,0^0^
+90,150^There are lots of fruits to gather here^0^-4^-14,0^0^
+128,150^Looks dark from here. Look out for nocs^0^0^0,0^0^
+142,150^A bat on your, you fell on to ground^0^-6^-142,0^0^
+3,50^We can find lots of fruits and maximize our energy^0^0^0,0^0^
+7,50^There are some Aronia, Eat or Store^1^2^0,0^0^
+13,50^Apricots!! Told ya we can find fruits^0^2^0,0^0^
+21,50^I see Elderberries. Eat or Store?^1^2^0,0^0^
+28,50^Some plum for you^0^2^0,0^0^
+37,50^We might not find food on top. Lets store them^0^0^0,0^0^
+46,50^Those are Quince, do you how to eat it?^0^3^-2,0^0^
+48,50^Start storing them we need it for future^0^0^0,0^0^
+63,50^Some Prune for you. Eat or Store^1^3^0,0^0^
+71,50^Wild Cranberry!! This is what I was waiting for^0^3^-5,0^0^
+3,100^We can find lots of fruits and maximize our energy^0^0^0,0^0^
+7,100^There are some Aronia, Eat or Store^1^2^0,0^0^
+13,100^Apricots!! Told ya we can find fruits^0^2^0,0^0^
+21,100^I see Elderberries. Eat or Store?^1^2^0,0^0^
+28,100^Some plum for you^0^2^0,0^0^
+37,100^We might not find food on top. Lets store them^0^0^0,0^0^
+46,100^Those are Quince, do you how to eat it?^0^3^-2,0^0^
+48,100^Start storing them we need it for future^0^0^0,0^0^
+63,100^Some Prune for you. Eat or Store^1^3^0,0^0^
+71,100^Wild Cranberry!! This is what I was waiting for^0^3^-5,0^0^
+3,150^We can find lots of fruits and maximize our energy^0^0^0,0^0^
+7,150^There are some Aronia, Eat or Store^1^2^0,0^0^
+13,150^Apricots!! Told ya we can find fruits^0^2^0,0^0^
+21,150^I see Elderberries. Eat or Store?^1^2^0,0^0^
+28,150^Some plum for you^0^2^0,0^0^
+37,150^We might not find food on top. Lets store them^0^0^0,0^0^
+46,150^Those are Quince, do you how to eat it?^0^3^-2,0^0^
+48,150^Start storing them we need it for future^0^0^0,0^0^
+63,150^Some Prune for you. Eat or Store^1^3^0,0^0^
+71,150^Wild Cranberry!! This is what I was waiting for^0^3^-5,0^0^
+98,50^You seems to be tired, loose 1 energy^0^-1^0,0^0^
+133,50^You hit a branch, loose 3 energy^0^-3^0,0^0^
+106,50^Oxygen level is down, loose 5 energy^0^-5^0,0^0^
+57,50^Found a creeper, move 3 places^0^-2^3,0^0^
+78,50^Climb on a monkey back, move 4 places^0^0^4,0^0^
+84,50^Found a friendly gorilla, move 5 places^0^0^5,0^0^
+98,100^You seems to be tired, loose 1 energy^0^-1^0,0^0^
+133,100^You hit a branch, loose 3 energy^0^-3^0,0^0^
+106,100^Oxygen level is down, loose 5 energy^0^-5^0,0^0^
+57,100^Found a creeper, move 3 places^0^-2^3,0^0^
+78,100^Climb on a monkey back, move 4 places^0^0^4,0^0^
+84,100^Found a friendly gorilla, move 5 places^0^0^5,0^0^
+98,150^You seems to be tired, loose 1 energy^0^-1^0,0^0^
+133,150^You hit a branch, loose 3 energy^0^-3^0,0^0^
+106,150^Oxygen level is down, loose 5 energy^0^-5^0,0^0^
+57,150^Found a creeper, move 3 places^0^-2^3,0^0^
+78,150^Climb on a monkey back, move 4 places^0^0^4,0^0^
+84,150^Found a friendly gorilla, move 5 places^0^0^5,0^0^
