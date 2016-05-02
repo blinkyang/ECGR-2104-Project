@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <vector>
 #include <stdlib.h>
 #include <time.h>
@@ -29,6 +30,8 @@ class Profile
 	int y_location = 0;
 	int x_location = 0;
 	int temp_steps = 0;
+	int response = 0;
+	int question = 0;
 };
 
 #endif // PROFILE_H
