@@ -1,5 +1,6 @@
 #include "Profile.h"
 #include "load_save.h"
+#include "event_handler.h"
 #include "dork.h"
 #include <iostream>
 
@@ -82,6 +83,8 @@ void Profile::roll()
 				steps = 0;
 				x_location = steps;
 			}
+
+			event_data(user_name, level, energy_level, steps, y_location, x_location);
 
 			if(temp_steps >= 25)
 			{
