@@ -35,21 +35,14 @@ void event_data(string& name, string& lev, int& en_lev, int& num_steps, int& yC,
 		y_coord.push_back(temp);
 		getline(buffer, temp);
 		x_coord.push_back(temp);
-	}
 
-	for(int i = 6; i < 1200; i+=6)
-	{
 		event.push_back(content[i+1]);
-	}
 
-	for(int i = 6; i < 1200; i+=6)
-	{
 		response.push_back(content[i+2]);
-	}
 
-	for(int i = 6; i < 1200; i+=6)
-	{
 		energy.push_back(content[i+3]);
+
+		question.push_back(content[i+5]);
 	}
 
 	for(int i = 6; i < 1200; i+=6)
@@ -61,11 +54,6 @@ void event_data(string& name, string& lev, int& en_lev, int& num_steps, int& yC,
 		x_location.push_back(temp);
 	}
 
-	for(int i = 6; i < 1200; i+=6)
-	{
-		question.push_back(content[i+5]);
-	}
-
 	convert(y_coord, x_coord, y_location, x_location, energy, y_C, x_C, y_L, x_L, add_en);
 	print_event(name, lev, en_lev, num_steps, yC, xC, fd, roll, event, response, question, y_C, x_C, y_L, x_L, add_en);
 }
@@ -75,36 +63,24 @@ void convert(vector<string>& yC, vector<string>& xC, vector<string>& yL, vector<
 	int temp;
 	string str;
 	
-	for(int i = 0; i < yC.size(); i++)
+	for(int i = 0; i < 199; i++)
 	{
 		str = yC[i];
 		temp = stol(str.substr(0));
 		temp_yC.push_back(temp);
-	}
 
-	for(int i = 0; i < xC.size(); i++)
-	{
 		str = xC[i];
 		temp = stol(str.substr(0));
 		temp_xC.push_back(temp);
-	}
 
-	for(int i = 0; i < yL.size(); i++)
-	{
 		str = yL[i];
 		temp = stol(str.substr(0));
 		temp_yL.push_back(temp);
-	}
 
-	for(int i = 0; i < xL.size(); i++)
-	{
 		str = xL[i];
 		temp = stol(str.substr(0));
 		temp_xL.push_back(temp);
-	}
 
-	for(int i = 0; i < en.size(); i++)
-	{
 		str = en[i];
 		temp = stol(str.substr(0));
 		energy_level.push_back(temp);
@@ -115,6 +91,7 @@ void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord
 {
 	string response = "0";
 	string question = "0";
+	string phrase;
 	char input;
 	
 	for(int i = 0; i < 199; i++)
@@ -144,7 +121,7 @@ void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord
 		}
 		else if(yCoord == temp_yC[i] && xCoord == temp_xC[i] && response == "1" && question == "0")
 		{
-			if(yCoord == 0 && xCoord == 50 || yCoord == 0 && xCoord == 100 || yCoord == 0 && xCoord == 150)
+			if(yCoord == 0 && xCoord == 50 || xCoord == 100 || xCoord == 150)
 			{
 				printw("%s", desc[i].c_str());
 				printw("\nYes(Y)/No(N): ");
@@ -206,6 +183,15 @@ void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord
 				}
 	
 				checkpoint(n, l, en, s, yCoord, xCoord);
+			}
+		}
+		else if(yCoord == temp_yC[i] && xCoord == temp_xC[i] && response == "1" && question == "0")
+		{
+			if(yCoord == 25 && xCoord == 50 || xCoord == 100 || xCoord == 150)
+			{
+				printw("%s", desc[i].c_str());
+				printw("\n\n");
+				getline(cin, phrase);
 			}
 		}
 	}
