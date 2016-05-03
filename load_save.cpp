@@ -66,10 +66,12 @@ void checkpoint(string name, string level, int num_steps, int en_lev, int y, int
 
 void newGame() 
 {
-	string name;
+	char name[200];
 
-	cout << "What's your name? ";
-	cin >> name;
+	printw("What's your name? ");
+	getstr(name);
+
+	clearDisplay(1);
 
 	Profile player(name);
 	player.roll();

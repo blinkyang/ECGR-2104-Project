@@ -91,7 +91,8 @@ void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord
 {
 	string response = "0";
 	string question = "0";
-	string phrase;
+	char phrase[10000];
+	char answer[10000];
 	char input;
 	
 	for(int i = 0; i < 199; i++)
@@ -184,14 +185,28 @@ void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord
 	
 				checkpoint(n, l, en, s, yCoord, xCoord);
 			}
+
+			if(yCoord == 150 && xCoord == 50 || xCoord == 100 || xCoord == 150)
+			{
+				printw("%s", desc[i].c_str());
+				
+				l = "Aerial";
+				s = xCoord + 1;
+			}
 		}
-		else if(yCoord == temp_yC[i] && xCoord == temp_xC[i] && response == "1" && question == "0")
+		else if(yCoord == temp_yC[i] && xCoord == temp_xC[i] && response == "1" && question == "1")
 		{
 			if(yCoord == 25 && xCoord == 50 || xCoord == 100 || xCoord == 150)
 			{
 				printw("%s", desc[i].c_str());
 				printw("\n\n");
-				getline(cin, phrase);
+				getstr(phrase);
+			}
+			else
+			{
+				printw("%s", desc[i].c_str());
+				printw("\n\n");
+				getstr(answer);
 			}
 		}
 	}
