@@ -108,6 +108,12 @@ void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord
 			yCoord += temp_yL[i];
 			xCoord += temp_xL[i];
 			en += energy[i];
+
+			if(yCoord == 150 && xCoord == 50)
+			{	
+				l = "Aerial";
+				s = xCoord + 1;
+			}
 			
 			if(l == "Terrestrial" || l == "Aerial")
 			{
@@ -186,13 +192,6 @@ void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord
 				checkpoint(n, l, en, s, yCoord, xCoord);
 			}
 
-			if(yCoord == 150 && xCoord == 50 || xCoord == 100 || xCoord == 150)
-			{
-				printw("%s", desc[i].c_str());
-				
-				l = "Aerial";
-				s = xCoord + 1;
-			}
 		}
 		else if(yCoord == temp_yC[i] && xCoord == temp_xC[i] && response == "1" && question == "1")
 		{

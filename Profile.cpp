@@ -87,17 +87,13 @@ void Profile::roll()
 			steps += dice;
 			temp_steps += dice;
 			
-			if(level == "Terrestrial")
+			if(level == "Terrestrial" || level == "Aerial")
 			{
 				x_location = steps;
 			}
-			else if(level == "Arboreal")
+			else
 			{
 				y_location = steps;
-			}
-			else if(level == "Aerial")
-			{
-				x_location = steps;
 			}
 
 			if(temp_steps >= 25)
