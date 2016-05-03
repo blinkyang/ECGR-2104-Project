@@ -32,7 +32,7 @@ void intro_display()
 {
 	    std::ifstream Art ("art.txt");
 	    std::ifstream Intro("intro.txt");
-	    std::ifstream Banner("Banner.txt");
+	    std::ifstream Banner("banner.txt");
 	    displaytext(Art);
 	    displaytext_delay(Intro);
 	    displaytext(Banner);

@@ -35,7 +35,7 @@ Profile::Profile(string un, string curr_level, int en_lev, int num_steps, int y,
 
 void Profile::display_info()
 {
-    	clearDisplay(1);
+    	//clearDisplay(1);
     
 	printw("--------------------------------------------------------------------------\n");
     	printw("Hello ");
@@ -57,9 +57,8 @@ void Profile::roll()
 	{
 		srand(time(0));
 
-		display_info();
-
 		event_data(user_name, level, energy_level, steps, y_location, x_location);
+		display_info();
 
 		printw("Press R to roll: ");
 		input = getch();
@@ -75,7 +74,7 @@ void Profile::roll()
 			{
 				x_location = steps;
 			}
-			else if(level == "Abboreal")
+			else if(level == "Arboreal")
 			{
 				steps = 0;
 				y_location = steps;
@@ -102,6 +101,6 @@ void Profile::roll()
 			roll();
 		}
 
-		display_info();
+		clearDisplay(1);
 	}
 }

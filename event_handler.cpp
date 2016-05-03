@@ -1,9 +1,10 @@
 #include "event_handler.h"
 #include "load_save.h"
+#include "Profile.h"
 
 using namespace std;
 
-void event_data(string name, string lev, int en_lev, int num_steps, int yC, int xC)
+void event_data(string& name, string& lev, int& en_lev, int& num_steps, int& yC, int& xC)
 {
 	ifstream infile("events.txt");
 	string temp;
@@ -110,14 +111,18 @@ void convert(vector<string>& yC, vector<string>& xC, vector<string>& yL, vector<
 	}
 }
 
-void print_event(string n, string l, int en, int s, int yCoord, int xCoord, vector<string>& desc, vector<string>& resp, vector<string>& ques, vector<int>& temp_yC, vector<int>& temp_xC, vector<int>& temp_yL, vector<int>& temp_xL, vector<int>& energy)
+void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord, vector<string>& desc, vector<string>& resp, vector<string>& ques, vector<int>& temp_yC, vector<int>& temp_xC, vector<int>& temp_yL, vector<int>& temp_xL, vector<int>& energy)
 {
-	int response = 0;
-	int question = 0;
+	string response = "0";
+	string question = "0";
+	char input;
 	
 	for(int i = 0; i < 199; i++)
 	{
-		if(yCoord == temp_yC[i] && xCoord == temp_xC[i] && response == 0 && question == 0)
+		response = resp[i];
+		question = ques[i];
+
+		if(yCoord == temp_yC[i] && xCoord == temp_xC[i] && response == "0" && question == "0")
 		{
 			printw("%s", desc[i].c_str());
 			printw("\n\n");
@@ -136,6 +141,71 @@ void print_event(string n, string l, int en, int s, int yCoord, int xCoord, vect
 			}
 	
 			checkpoint(n, l, en, s, yCoord, xCoord);
+		}
+		else if(yCoord == temp_yC[i] && xCoord == temp_xC[i] && response == "1" && question == "0")
+		{
+			if(yCoord == 0 && xCoord == 50 || yCoord == 0 && xCoord == 100 || yCoord == 0 && xCoord == 150)
+			{
+				printw("%s", desc[i].c_str());
+				printw("\nYes(Y)/No(N): ");
+				input = getch();
+				printw("\n\n");
+
+				if(input == 'y' || input == 'Y')
+				{
+					l = "Arboreal";
+				}
+				else if(input == 'n' || input == 'N')
+				{
+					xCoord += temp_xL[i];
+				}
+			
+				yCoord += temp_yL[i];
+			
+				if(l == "Terrestrial" || l == "Aerial")
+				{
+					s += temp_xL[i];
+				}
+				else
+				{
+					s += temp_yL[i];
+				}
+	
+				checkpoint(n, l, en, s, yCoord, xCoord);
+
+				
+			}
+			else
+			{
+				printw("%s", desc[i].c_str());
+				printw("\nEat(E)/Store(S): ");
+				input = getch();
+				printw("\n\n");
+
+				if(input == 's' || input == 'S')
+				{
+					ofstream store("food.txt");
+					store << energy[i];
+				}
+				else if(input == 'e' || input == 'E')
+				{
+					en += energy[i];
+				}
+			
+				yCoord += temp_yL[i];
+				xCoord += temp_xL[i];
+			
+				if(l == "Terrestrial" || l == "Aerial")
+				{
+					s += temp_xL[i];
+				}
+				else
+				{
+					s += temp_yL[i];
+				}
+	
+				checkpoint(n, l, en, s, yCoord, xCoord);
+			}
 		}
 	}
 }
