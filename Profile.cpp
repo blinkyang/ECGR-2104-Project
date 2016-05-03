@@ -57,8 +57,25 @@ void Profile::roll()
 	{
 		srand(time(0));
 
-		event_data(user_name, level, energy_level, steps, y_location, x_location);
+		event_data(user_name, level, energy_level, steps, y_location, x_location, food, roll_counter);
 		display_info();
+
+		if(food > 0 && roll_counter >= 0)
+		{
+			printw("Do you want to eat your stored food? (Y/N): ");
+			input = getch();
+			printw("\n\n");
+
+			if(input == 'y' || input == 'Y')
+			{
+				energy_level += food;
+				food = 0;
+			}
+			else if(input == 'n' || input == 'N')
+			{
+				roll_counter--;
+			}
+		}
 
 		printw("Press R to roll: ");
 		input = getch();
@@ -76,16 +93,12 @@ void Profile::roll()
 			}
 			else if(level == "Arboreal")
 			{
-				steps = 0;
 				y_location = steps;
 			}
 			else if(level == "Aerial")
 			{
-				steps = 0;
 				x_location = steps;
 			}
-
-			//event_data(user_name, level, energy_level, steps, y_location, x_location);
 
 			if(temp_steps >= 25)
 			{

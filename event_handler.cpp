@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void event_data(string& name, string& lev, int& en_lev, int& num_steps, int& yC, int& xC)
+void event_data(string& name, string& lev, int& en_lev, int& num_steps, int& yC, int& xC, int& fd, int& roll)
 {
 	ifstream infile("events.txt");
 	string temp;
@@ -67,7 +67,7 @@ void event_data(string& name, string& lev, int& en_lev, int& num_steps, int& yC,
 	}
 
 	convert(y_coord, x_coord, y_location, x_location, energy, y_C, x_C, y_L, x_L, add_en);
-	print_event(name, lev, en_lev, num_steps, yC, xC, event, response, question, y_C, x_C, y_L, x_L, add_en);
+	print_event(name, lev, en_lev, num_steps, yC, xC, fd, roll, event, response, question, y_C, x_C, y_L, x_L, add_en);
 }
 
 void convert(vector<string>& yC, vector<string>& xC, vector<string>& yL, vector<string>& xL, vector<string>& en, vector<int>& temp_yC, vector<int>& temp_xC, vector<int>& temp_yL, vector<int>& temp_xL, vector<int>& energy_level)
@@ -111,7 +111,7 @@ void convert(vector<string>& yC, vector<string>& xC, vector<string>& yL, vector<
 	}
 }
 
-void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord, vector<string>& desc, vector<string>& resp, vector<string>& ques, vector<int>& temp_yC, vector<int>& temp_xC, vector<int>& temp_yL, vector<int>& temp_xL, vector<int>& energy)
+void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord, int& pouch, int& rc, vector<string>& desc, vector<string>& resp, vector<string>& ques, vector<int>& temp_yC, vector<int>& temp_xC, vector<int>& temp_yL, vector<int>& temp_xL, vector<int>& energy)
 {
 	string response = "0";
 	string question = "0";
@@ -154,6 +154,7 @@ void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord
 				if(input == 'y' || input == 'Y')
 				{
 					l = "Arboreal";
+					s = 1;
 				}
 				else if(input == 'n' || input == 'N')
 				{
@@ -184,8 +185,8 @@ void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord
 
 				if(input == 's' || input == 'S')
 				{
-					ofstream store("food.txt");
-					store << energy[i];
+					pouch = energy[i];
+					rc = 5;
 				}
 				else if(input == 'e' || input == 'E')
 				{

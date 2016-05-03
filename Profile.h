@@ -27,11 +27,11 @@ class Profile
         int energy_level;
         int steps;
 	int dice;
+	int roll_counter = 0;
+	int food = 0;
 	int y_location = 0;
 	int x_location = 0;
 	int temp_steps = 0;
-	int response = 0;
-	int question = 0;
 };
 
 #endif // PROFILE_H
