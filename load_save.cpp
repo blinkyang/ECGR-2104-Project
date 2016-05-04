@@ -1,3 +1,10 @@
+/**********************************************************************
+ * File: load_save.cpp
+ * Description: Loading and saving profile data;opening() starts the game
+ * Author: Toubee Lo, Andy Dang, Kongyeng Yang
+ * University: UNC Charlotte
+***********************************************************************/
+
 #include "load_save.h"
 #include "dork.h"
 #include "Profile.h"

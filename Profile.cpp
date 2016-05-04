@@ -1,3 +1,10 @@
+/**********************************************************************
+ * File: Profile.cpp
+ * Description: Creates a class for the player
+ * Author: Toubee Lo, Andy Dang, Kongyeng Yang
+ * University: UNC Charlotte
+***********************************************************************/
+
 #include "Profile.h"
 #include "load_save.h"
 #include "event_handler.h"
@@ -34,9 +41,7 @@ Profile::Profile(string un, string curr_level, int en_lev, int num_steps, int y,
 }
 
 void Profile::display_info()
-{
-    	//clearDisplay(1);
-    
+{   
 	printw("--------------------------------------------------------------------------\n");
     	printw("Hello ");
     	printw("%s", user_name.c_str());
@@ -53,7 +58,7 @@ void Profile::display_info()
 
 void Profile::roll()
 {
-	while(/*(x_location < 201 && y_location < 150) ||*/ energy_level > 0)
+	while(energy_level > 0)
 	{
 		srand(time(0));
 
@@ -75,6 +80,12 @@ void Profile::roll()
 			{
 				roll_counter--;
 			}
+		}
+	
+		if(x_location == 201 && y_location == 150)
+		{
+			printw("\n\nTHE END");
+			break;
 		}
 
 		printw("Press R to roll: ");
@@ -105,9 +116,47 @@ void Profile::roll()
 		}
 		else
 		{
-			printw("Invalid input. Try again.");
-		
+			clearDisplay(1);
+			printw("Invalid input. Try again.\n\n");
 			roll();
+		}
+
+		if(x_location > 201 || y_location > 150)
+		{
+			clearDisplay(1);
+			display_info();
+			printw("\n\nYou're lost...");
+			printw("\nWould you like to retry? (Y/N): ");
+			input = getch();
+			
+			if(input == 'y' || input == 'Y')
+			{	
+				clearDisplay(1);
+				opening();
+			}
+			else if(input == 'n' || input == 'N')
+			{
+				break;
+			}
+		}
+
+		if(energy_level <= 0)
+		{
+			clearDisplay(1);
+			display_info();
+			printw("\n\nYou starved to death...");
+			printw("\nWould you like to retry? (Y/N): ");
+			input = getch();
+			
+			if(input == 'y' || input == 'Y')
+			{	
+				clearDisplay(1);
+				opening();
+			}
+			else if(input == 'n' || input == 'N')
+			{
+				break;
+			}
 		}
 
 		clearDisplay(1);

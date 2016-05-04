@@ -23,12 +23,11 @@
 int main(int argc, char *argv[])
 {
 	display_init();
-    	//intro_display();
-    	//clearDisplay(1);
+    	intro_display();
 	opening();
-	//event_data("chat", "aerial", 15, 31, 150, 201);
 	
     	getch();
     	display_close();
+
     	return 0;
 }

@@ -1,3 +1,13 @@
+/**********************************************************************
+ * File: event_handler.cpp
+ * Description: Stores and Utilizes Events
+	- event_data() stores the components of each event into 8 different vectors
+	- convert() converts the string components that were stored into vectors, and converts them into integers
+	- print_event() prints the event description if all the conditions are met
+ * Author: Toubee Lo, Andy Dang, Kongyeng Yang
+ * University: UNC Charlotte
+***********************************************************************/
+
 #include "event_handler.h"
 #include "load_save.h"
 #include "Profile.h"
@@ -93,6 +103,7 @@ void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord
 	string question = "0";
 	char phrase[10000];
 	char answer[10000];
+	string a;
 	char input;
 	
 	for(int i = 0; i < 199; i++)
@@ -112,7 +123,7 @@ void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord
 			if(yCoord == 150 && xCoord == 50)
 			{	
 				l = "Aerial";
-				s = xCoord + 1;
+				s = xCoord;
 			}
 			
 			if(l == "Terrestrial" || l == "Aerial")
@@ -138,7 +149,7 @@ void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord
 				if(input == 'y' || input == 'Y')
 				{
 					l = "Arboreal";
-					s = 1;
+					s = 0;
 				}
 				else if(input == 'n' || input == 'N')
 				{
@@ -157,8 +168,6 @@ void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord
 				}
 	
 				checkpoint(n, l, en, s, yCoord, xCoord);
-
-				
 			}
 			else
 			{
@@ -206,6 +215,13 @@ void print_event(string& n, string& l, int& en, int& s, int& yCoord, int& xCoord
 				printw("%s", desc[i].c_str());
 				printw("\n\n");
 				getstr(answer);
+				a = answer;
+
+				if(yCoord == 150 && xCoord == 200 && a == phrase)
+				{
+					s += 1;
+					xCoord += 1;
+				}
 			}
 		}
 	}

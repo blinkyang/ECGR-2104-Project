@@ -1,3 +1,10 @@
+/**********************************************************************
+ * File: load_save.h
+ * Description: Header for load_save.h
+ * Author: Toubee Lo, Andy Dang, Kongyeng Yang
+ * University: UNC Charlotte
+***********************************************************************/
+
 #ifndef LOAD_SAVE_H
 #define LOAD_SAVE_H
 

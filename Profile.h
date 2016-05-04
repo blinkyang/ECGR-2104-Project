@@ -1,3 +1,10 @@
+/**********************************************************************
+ * File: Profile.h
+ * Description: Header file for Profile.cpp
+ * Author: Toubee Lo, Andy Dang, Kongyeng Yang
+ * University: UNC Charlotte
+***********************************************************************/
+
 #ifndef PROFILE_H
 #define PROFILE_H
 

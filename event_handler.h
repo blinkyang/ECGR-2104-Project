@@ -1,3 +1,10 @@
+/**********************************************************************
+ * File: event_handler.h
+ * Description: Header for event_handler.cpp
+ * Author: Toubee Lo, Andy Dang, Kongyeng Yang
+ * University: UNC Charlotte
+***********************************************************************/
+
 #ifndef EVENT_HANDLER_H
 #define EVENT_HANDLER_H
 
